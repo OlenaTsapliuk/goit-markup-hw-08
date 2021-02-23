@@ -1,0 +1,35 @@
+.posters {
+  @extend %list;
+  display: flex;
+}
+.posters__item {
+  width: 370px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+/* Спозиционирован текст */
+.posters__block {
+  position: relative;
+}
+.posters__description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  @include centered-flex();
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.posters__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $primary-white-color;
+}

@@ -1,0 +1,31 @@
+.auth-nav {
+  @extend .site-nav;
+}
+.auth-nav__link {
+  @extend .site-nav__link;
+}
+
+.auth-nav,
+.auth-nav__link {
+  @include centered-flex();
+  color: $primary-text-color;
+  margin-left: auto;
+}
+.auth-nav__item + .auth-nav__item {
+  margin-left: 50px;
+}
+
+/* Иконки Tel, mail */
+
+.auth-nav__link {
+  @extend %link;
+  fill: currentColor;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.auth-nav__icon {
+  margin-right: 10px;
+}

@@ -1,0 +1,29 @@
+.features {
+  @extend %list;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.features__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__caption {
+  font-weight: bold;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: $title-text-color;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.features__description {
+  line-height: 1.714;
+  width: 270px;
+  height: 75px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 0;
+}

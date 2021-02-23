@@ -1,0 +1,11 @@
+.thumb {
+  @include centered-flex();
+  background-color: #f5f4fa;
+  height: 120px;
+  width: 270px;
+  margin-bottom: 30px;
+}
+
+.thumb:not(:last-child) {
+  margin-right: 30px;
+}

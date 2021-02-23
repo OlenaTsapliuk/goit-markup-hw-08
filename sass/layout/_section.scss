@@ -1,0 +1,13 @@
+.section {
+  @include section-padding();
+  background-color: $primary-white-color;
+
+  &-top {
+    @include section-padding(0);
+  }
+
+  &-workers {
+    @include section-padding();
+    background-color: $background-komandy;
+  }
+}

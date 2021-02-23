@@ -1,0 +1,40 @@
+.footer {
+  background-color: $footer-heroy-background-color;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer-logo {
+  @extend %whole-logo;
+  display: inline-block;
+  color: $accent-color;
+  margin-bottom: 20px;
+}
+.auth-footer__link {
+  @extend %link;
+  color: $color-link-footer;
+  transition-property: color;
+  transition-duration: $time;
+  transition-timing-function: $animation-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.auth-footer {
+  @extend %list;
+  display: inline-block;
+}
+.auth-footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address {
+  margin-bottom: 9px;
+  color: $primary-white-color;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
