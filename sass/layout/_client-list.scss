@@ -1,8 +1,8 @@
-.klient-list {
+.client-list {
   @extend %list;
   display: flex;
 }
-.klient-list__item {
+.client-list__item {
   width: 170px;
   height: 90px;
   &:not(:last-child) {
@@ -10,7 +10,7 @@
   }
 }
 
-.klient-list__links {
+.client-list__links {
   @include centered-flex();
   @extend %link;
   color: $icon-color;
