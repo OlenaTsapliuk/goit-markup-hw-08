@@ -1,22 +1,59 @@
-// .hero {
-//   padding-top: 200px;
-//   padding-bottom: 200px;
-//   background-color: $footer-heroy-background-color;
-//   max-width: $max-width;
-//   height: 600px;
-//   margin-right: auto;
-//   margin-left: auto;
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url("../images/overlay.jpg");
-//   background-size: cover;
-//   background-position: center;
-// }
-// .hero__wraper {
-//   max-width: 700px;
-//   margin-right: auto;
-//   margin-left: auto;
-// }
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  background-color: $footer-heroy-background-color;
+  max-width: 480px;
+  height: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../../images/hero/mobileHeader.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  screen and (min-resolution: 192dpi) and (min-width: 320px),
+  screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .hero {
+    background-image: url("../../images/hero/mobileHeader@2x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url("");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and (min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url("photo-tablet@2x.png");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url("photo-desktop.png");
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and (min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url("photo-desktop@2x.png");
+  }
+}
+
+.hero__wraper {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+}
