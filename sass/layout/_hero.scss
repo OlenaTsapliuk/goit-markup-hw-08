@@ -20,13 +20,13 @@
   screen and (min-resolution: 192dpi) and (min-width: 320px),
   screen and (min-resolution: 2dppx) and (min-width: 320px) {
   .hero {
-    background-image: url("../../images/hero/mobileHeader@2x.jpg");
+    background-image: url("../images/hero/mobileHeader@2x.jpg");
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url("../../images/hero/tabletHeader.jpg");
+    background-image: url("../images/hero/tabletHeader.jpg");
   }
 }
 
@@ -34,7 +34,7 @@
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: url("/images/hero/tabletHeader@2x.jpg");
+    background-image: url("../images/hero/tabletHeader@2x.jpg");
   }
 }
 
