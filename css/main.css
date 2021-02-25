@@ -207,8 +207,20 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    margin: -15px;
   }
 }
 
@@ -218,7 +230,15 @@ body {
 
 @media screen and (min-width: 768px) {
   .features__item {
-    width: 50%;
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    margin: 15px;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -232,13 +252,34 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .features__caption {
+    text-align: left;
+  }
+}
+
 .features__description {
   line-height: 1.714;
   width: 450px;
   height: 50px;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .features__description {
+    height: 75px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__description {
+    height: 75px;
+    width: 270px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -305,6 +346,8 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 
@@ -321,6 +364,7 @@ body {
 .team__position {
   display: block;
   font-weight: normal;
+  font-size: 16px;
   line-height: 1.7;
   margin-top: 0;
   margin-bottom: 16px;
@@ -332,6 +376,10 @@ body {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
@@ -349,7 +397,13 @@ body {
 }
 
 .team__description {
-  padding: 30px 32px;
+  padding: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team__description {
+    padding: 30px;
+  }
 }
 
 .client-list__item {
@@ -797,12 +851,20 @@ body {
 
 .section__title {
   font-weight: bold;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.171;
   text-align: center;
   color: #212121;
   margin-top: 0%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-bottom: 50px;
+  }
 }
 
 .thumb {
@@ -821,10 +883,32 @@ body {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .thumb {
+    height: 120px;
+    width: 354px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .thumb {
+    height: 120px;
+    width: 270px;
+    margin-bottom: 30px;
+  }
+}
+
 .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 0;
 }
 

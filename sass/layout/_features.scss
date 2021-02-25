@@ -1,9 +1,15 @@
 .features {
   @extend %list;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  @media screen and (min-width: $desktop) {
     display: flex;
     flex-wrap: nowrap;
+    margin: -15px;
   }
 }
 .features__item {
@@ -12,8 +18,13 @@
   // &:not(:last-child) {
   //   margin-right: 30px;
   // }
-  @media screen and (min-width: 768px) {
-    width: 50%;
+  @media screen and (min-width: $tablet) {
+    margin: 15px;
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    margin: 15px;
+    width: calc((100% - 120px) / 4);
   }
 }
 
@@ -25,6 +36,10 @@
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
 }
 .features__description {
   line-height: 1.714;
@@ -32,5 +47,15 @@
   height: 50px;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: $tablet) {
+    height: 75px;
+    width: 354px;
+  }
+  @media screen and (min-width: $desktop) {
+    height: 75px;
+    width: 270px;
+    margin-bottom: 0;
+  }
 }

@@ -1,6 +1,6 @@
 .social-list {
   @extend %list;
-  display: flex;
+  @include centered-flex();
   margin-bottom: 0;
 }
 
