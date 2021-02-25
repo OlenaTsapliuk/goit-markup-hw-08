@@ -89,10 +89,17 @@ body {
   height: 400px;
   margin-right: auto;
   margin-left: auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../images/hero/mobileHeader.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/hero/mobileHeader.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/mobileHeader.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/mobileHeader.jpg");
   background-size: cover;
   background-position: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 320px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), screen and (min-resolution: 192dpi) and (min-width: 320px), screen and (min-resolution: 2dppx) and (min-width: 320px) {
@@ -103,6 +110,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .hero {
+    max-width: 768px;
     background-image: url("../images/hero/tabletHeader.jpg");
   }
 }
@@ -115,20 +123,28 @@ body {
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url("photo-desktop.png");
+    max-width: 1600px;
+    height: 600px;
+    background-image: url("../images/hero/desktopHeader.jpg");
   }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .hero {
-    background-image: url("photo-desktop@2x.png");
+    background-image: url("../images/hero/desktopHeader@2x.jpg");
   }
 }
 
 .hero__wraper {
-  max-width: 700px;
+  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__wraper {
+    max-width: 696px;
+  }
 }
 
 .section {
@@ -692,14 +708,21 @@ body {
 
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 0%;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.363;
+  }
 }
 
 .modal-button, .button-mailing, .buttons {
