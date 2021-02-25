@@ -1,8 +1,14 @@
 .posters {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.posters-set {
   @extend %list;
   display: flex;
 }
-.posters__item {
+
+.posters-set__item {
   width: 370px;
   &:not(:last-child) {
     margin-right: 30px;
@@ -10,10 +16,10 @@
 }
 
 /* Спозиционирован текст */
-.posters__block {
+.posters-set__block {
   position: relative;
 }
-.posters__description {
+.posters-set__description {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -22,7 +28,7 @@
   @include centered-flex();
   background-color: rgba(47, 48, 58, 0.8);
 }
-.posters__text {
+.posters-set__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: bold;

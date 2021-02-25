@@ -1,7 +1,7 @@
-.menu,
-.main-nav {
-  @include centered-flex();
-}
+// .menu,
+// .main-nav {
+//   @include centered-flex();
+// }
 .site-nav {
   @extend %list;
   font-weight: 500;
@@ -34,7 +34,7 @@
 }
 
 .site-nav {
-  display: flex;
+  //   display: flex;
   margin-left: 93px;
 }
 .site-nav__item:not(:last-child) {
