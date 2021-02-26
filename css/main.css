@@ -258,7 +258,7 @@ body {
 
 .features__description {
   line-height: 1.714;
-  width: 450px;
+  max-width: 450px;
   height: 50px;
   letter-spacing: 0.03em;
   margin-top: 0;
@@ -401,6 +401,10 @@ body {
   .team__description {
     padding: 30px;
   }
+}
+
+.team__images {
+  width: 100%;
 }
 
 .client-list__item {
@@ -876,7 +880,7 @@ body {
           justify-content: center;
   background-color: #f5f4fa;
   height: 120px;
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 
