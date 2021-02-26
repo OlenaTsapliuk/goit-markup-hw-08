@@ -34,7 +34,7 @@
   overflow: hidden;
 }
 
-.modal-button, .buttons {
+.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -525,18 +525,27 @@ body {
   line-height: 1.7;
 }
 
+.footer-wraper {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
 .form-send {
-  margin-left: auto;
+  text-align: center;
 }
 
 .form-send__field {
-  position: relative;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .form-send__input {
   padding: 15px 16px;
-  margin-right: 11px;
-  width: 358px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
@@ -997,7 +1006,8 @@ body {
 }
 
 .footer-social-list {
-  margin-left: 69px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .bg {
