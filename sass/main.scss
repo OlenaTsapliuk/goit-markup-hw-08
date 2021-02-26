@@ -1,9 +1,9 @@
+@import "./base/reset-styles";
+
 @import "./utils/variables";
 @import "./utils/media";
 @import "./utils/placeholders";
 @import "./utils/mixin";
-
-@import "./base/reset-styles";
 
 @import "./layout/body";
 @import "./layout/header";

@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.ul {
+  padding: 0;
+  margin: 0;
+}
+
 .features, .posters-set, .team, .client-list, .auth-footer, .social-list, .button-list, .card-set {
   margin: 0;
   padding: 0;
@@ -29,17 +40,6 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-}
-
-.img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.ul {
-  padding: 0;
-  margin: 0;
 }
 
 body {
@@ -202,7 +202,7 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -220,15 +220,12 @@ body {
     display: flex;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: -15px;
+    margin-right: -15px;
+    margin-left: -15px;
   }
 }
 
-.features__item {
-  width: 450px;
-}
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .features__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
@@ -237,7 +234,8 @@ body {
 
 @media screen and (min-width: 1200px) {
   .features__item {
-    margin: 15px;
+    margin-right: 15px;
+    margin-left: 15px;
     width: calc((100% - 120px) / 4);
   }
 }
@@ -337,10 +335,6 @@ body {
   color: #ffffff;
 }
 
-.team {
-  margin: -15px;
-}
-
 @media screen and (min-width: 768px) {
   .team {
     display: -webkit-box;
@@ -348,6 +342,7 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: -15px;
   }
 }
 
@@ -378,11 +373,13 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .team__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
@@ -390,9 +387,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .team__item {
+  .team__item:not(:last-child) {
+    margin-right: 30px;
     width: calc((100% - 120px) / 4);
-    margin: 15px;
   }
 }
 
@@ -887,7 +884,6 @@ body {
   .thumb {
     height: 120px;
     width: 354px;
-    margin-bottom: 30px;
   }
 }
 
@@ -895,7 +891,6 @@ body {
   .thumb {
     height: 120px;
     width: 270px;
-    margin-bottom: 30px;
   }
 }
 
