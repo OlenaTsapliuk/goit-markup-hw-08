@@ -14,7 +14,9 @@
   }
 }
 .features__item {
-  //   width: 450px;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 
   // &:not(:last-child) {
   //   margin-right: 30px;
@@ -50,7 +52,7 @@
   height: 50px;
   letter-spacing: 0.03em;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   @media screen and (min-width: $tablet) {
     height: 75px;
