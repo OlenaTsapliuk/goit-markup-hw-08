@@ -27,9 +27,13 @@
   @extend %list;
   display: inline-flex;
   flex-wrap: wrap;
-  // @include centered-flex();
+
   margin: -8px;
   margin-bottom: 40px;
+
+  @media screen and (min-width: $tablet) {
+    @include centered-flex();
+  }
 }
 .button-list__item {
   margin: 8px;
