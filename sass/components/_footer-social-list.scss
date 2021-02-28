@@ -7,15 +7,26 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $primary-white-color;
+
+  @media screen and(min-width: $desktop) {
+    text-align: left;
+  }
 }
 .footer-social-list {
   text-align: center;
   margin-bottom: 60px;
-  // margin-left: 69px;
+
+  @media screen and(min-width: $desktop) {
+    margin-left: 70px;
+    text-align: left;
+    margin-bottom: 0;
+  }
 }
 .footer-content {
-  // display: flex;
-  // align-items: baseline;
+  @media screen and(min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+  }
 }
 .bg {
   background-color: rgba(255, 255, 255, 0.1);

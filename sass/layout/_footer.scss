@@ -35,4 +35,14 @@
 .footer-contacts {
   text-align: center;
   margin-bottom: 60px;
+  @media screen and(min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+.footer-wraper {
+  @media screen and(min-width: $tablet) {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }

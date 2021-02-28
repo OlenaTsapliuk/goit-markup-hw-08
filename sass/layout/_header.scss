@@ -9,4 +9,8 @@
   background-color: transparent;
   padding: 0;
   border: none;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
