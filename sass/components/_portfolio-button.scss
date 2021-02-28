@@ -25,9 +25,15 @@
 
 .button-list {
   @extend %list;
-  @include centered-flex();
-  margin-bottom: 50px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  // @include centered-flex();
+  margin: -8px;
+  margin-bottom: 40px;
 }
-.button-list__item:not(:last-child) {
-  margin-right: 8px;
+.button-list__item {
+  margin: 8px;
 }
+// .button-list__item:not(:last-child) {
+//   margin-right: 8px;
+// }

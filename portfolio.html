@@ -26,17 +26,23 @@
           >
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия </a>
+              <a class="site-nav__link" href="">Студия </a>
             </li>
             <li class="site-nav__item">
-              <a class="site-nav__link current" href="">Портфолио</a>
+              <a class="site-nav__link current" href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="site-nav__item">
               <a class="site-nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-
+        <button class="button-dropdown">
+          <svg class="" width="40" height="40">
+            <use href="./images/sprite.svg#menu_icon"></use>
+          </svg>
+        </button>
         <ul class="auth-nav">
           <li class="auth-nav__item">
             <a class="auth-nav__link" href="mailto:info@devstudio.com">
@@ -83,13 +89,52 @@
             <li class="card-set__item">
               <a href="" class="portfolio"
                 ><div class="overlay-card">
-                  <img
-                    class="portfolio__icon"
-                    src="images/comp.jpg"
-                    alt="Веб-сайт Технокряк"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-comp.webp    1x,
+                        ./images/portfolio-card/desktop/desktop-comp@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-comp.jpg    1x,
+                        ./images/portfolio-card/desktop/desktop-comp@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-comp.webp    1x,
+                        ./images/portfolio-card/tablet/tablet-comp@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-comp.jpg    1x,
+                        ./images/portfolio-card/tablet/tablet-comp@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)" />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-comp.webp    1x,
+                        ./images/portfolio-card/mobile/mobile-comp@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp" />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-comp.jpg    1x,
+                        ./images/portfolio-card/mobile/mobile-comp@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)" />
+                    <img
+                      class="portfolio__icon"
+                      src="./images/portfolio-card/mobile/mobile-comp.jpg"
+                      alt="Веб-сайт Технокряк"
+                  /></picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Технокряк это современная площадка распространения
@@ -108,13 +153,59 @@
             <li class="card-set__item">
               <a href="" class="portfolio"
                 ><div class="overlay-card">
-                  <img
-                    class="portfolio__icon"
-                    src="images/basket.jpg"
-                    alt="Игра в баскетбол"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-basket.webp    1x,
+                        ./images/portfolio-card/desktop/desktop-basket@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-basket.jpg    1x,
+                        ./images/portfolio-card/desktop/desktop-basket@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-basket.webp    1x,
+                        ./images/portfolio-card/tablet/tablet-basket@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-basket.jpg    1x,
+                        ./images/portfolio-card/tablet/tablet-basket@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-basket.webp    1x,
+                        ./images/portfolio-card/mobile/mobile-basket@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-basket.jpg    1x,
+                        ./images/portfolio-card/mobile/mobile-basket@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio__icon"
+                      src="./images/portfolio-card/mobile/mobile-basket.jpg"
+                      alt="Игра в баскетбол"
+                    />
+                  </picture>
+
                   <div class="overlay">
                     <p class="overlay__text">
                       Технокряк это современная площадка распространения
@@ -135,13 +226,58 @@
             <li class="card-set__item">
               <a href="" class="portfolio"
                 ><div class="overlay-card">
-                  <img
-                    class="portfolio__icon"
-                    src="images/seafood.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-seafood.webp    1x,
+                        ./images/portfolio-card/desktop/desktop-seafood@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/desktop/desktop-seafood.jpg    1x,
+                        ./images/portfolio-card/desktop/desktop-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-seafood.webp    1x,
+                        ./images/portfolio-card/tablet/tablet-seafood@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/tablet/tablet-seafood.jpg    1x,
+                        ./images/portfolio-card/tablet/tablet-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-seafood.webp    1x,
+                        ./images/portfolio-card/mobile/mobile-seafood@2x.webp 2x
+                      "
+                      media="(min-width: 480px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio-card/mobile/mobile-seafood.jpg    1x,
+                        ./images/portfolio-card/mobile/mobile-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 480px)"
+                    />
+                    <img
+                      class="portfolio__icon"
+                      src="./images/portfolio-card/mobile/mobile-seafood.jpg"
+                      alt="Логотип ресторана"
+                    />
+                  </picture>
                   <div class="overlay">
                     <p class="overlay__text">
                       Технокряк это современная площадка распространения
