@@ -5,7 +5,8 @@
 .portfolio-header {
   border-bottom: 1px solid $color-header-border;
 }
-.button-dropdown {
+.button-dropdown,
+dropdown-close-btn {
   background-color: transparent;
   padding: 0;
   border: none;

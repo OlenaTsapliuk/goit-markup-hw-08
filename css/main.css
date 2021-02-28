@@ -58,14 +58,16 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.button-dropdown {
+.button-dropdown,
+dropdown-close-btn {
   background-color: transparent;
   padding: 0;
   border: none;
 }
 
 @media screen and (min-width: 768px) {
-  .button-dropdown {
+  .button-dropdown,
+  dropdown-close-btn {
     display: none;
   }
 }
