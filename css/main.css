@@ -146,7 +146,6 @@ body {
   margin-right: 50px;
 }
 
-/* Подчеркивание текущей ссылки */
 .site-nav__link.current::after {
   position: absolute;
   left: 0;
@@ -945,7 +944,15 @@ body {
   font-weight: bold;
   font-size: 24px;
   line-height: 1.174;
+  letter-spacing: 0.03em;
   padding: 16px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo, .logo-secondary, .logo-secondary-footer, .footer-logo {
+    font-size: 26px;
+    line-height: 1.173;
+  }
 }
 
 .logo {
@@ -972,13 +979,47 @@ body {
 .auth-nav {
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.171;
   color: #212121;
   letter-spacing: 0.02em;
 }
 
-.auth-nav,
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    font-size: 14px;
+    line-height: 1.142;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.auth-nav__item + .auth-nav__item {
+  margin-left: 30px;
+}
+
 .auth-nav__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   color: #757575;
   margin-left: auto;
 }
@@ -993,7 +1034,13 @@ body {
 }
 
 .auth-nav__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__icon {
+    margin-right: 10px;
+  }
 }
 
 .hero__title {

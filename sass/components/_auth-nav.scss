@@ -2,23 +2,33 @@
   @extend %list;
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.14;
+  line-height: 1.171;
   color: $title-text-color;
   letter-spacing: 0.02em;
-}
-.auth-nav__link {
-  //   @extend .site-nav__link;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 1.142;
+    @include centered-flex();
+  }
 }
 
-.auth-nav,
+.auth-nav__item:not(:last-child) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 10px;
+  }
+}
+.auth-nav__item + .auth-nav__item {
+  margin-left: 30px;
+}
+
 .auth-nav__link {
-  //   @include centered-flex();
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: $primary-text-color;
   margin-left: auto;
 }
-// .auth-nav__item + .auth-nav__item {
-//   margin-left: 50px;
-// }
 
 /* Иконки Tel, mail */
 
@@ -32,5 +42,9 @@
 }
 
 .auth-nav__icon {
-  margin-right: 10px;
+  margin-right: 8px;
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
 }
