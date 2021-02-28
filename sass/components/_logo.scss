@@ -25,5 +25,8 @@
 .footer-logo {
   @extend %whole-logo;
   display: inline-block;
+  color: $accent-color;
   margin-bottom: 20px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
