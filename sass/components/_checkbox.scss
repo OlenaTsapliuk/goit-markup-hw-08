@@ -18,13 +18,13 @@
 .form-checkbox__label {
   display: inline-block;
   font-weight: normal;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   margin-left: 35px;
 
   &::after {
-    @include position-element(absolute, 50%, 13px);
+    @include position-element(absolute, 50%, 20px);
     transform: translateY(-50%);
     content: "";
     display: inline-block;
