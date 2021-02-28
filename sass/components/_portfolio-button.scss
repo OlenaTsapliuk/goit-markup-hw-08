@@ -28,15 +28,15 @@
   display: inline-flex;
   flex-wrap: wrap;
 
-  margin: -8px;
-  margin-bottom: 40px;
+  margin: -4px;
+  margin-bottom: 36px;
 
   @media screen and (min-width: $tablet) {
     @include centered-flex();
   }
 }
 .button-list__item {
-  margin: 8px;
+  margin: 4px;
 }
 // .button-list__item:not(:last-child) {
 //   margin-right: 8px;

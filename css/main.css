@@ -636,6 +636,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-contacts {
     margin-bottom: 0;
+    text-align: left;
   }
 }
 
@@ -1326,8 +1327,8 @@ body {
   display: inline-flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -8px;
-  margin-bottom: 40px;
+  margin: -4px;
+  margin-bottom: 36px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1345,7 +1346,7 @@ body {
 }
 
 .button-list__item {
-  margin: 8px;
+  margin: 4px;
 }
 
 .card-set {
@@ -1378,6 +1379,13 @@ body {
   .card-set__item {
     margin: 15px;
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set__item {
+    margin: 15px;
+    width: 370px;
   }
 }
 
@@ -1417,6 +1425,7 @@ body {
 }
 
 .portfolio__icon {
+  width: 100%;
   margin-top: 0;
 }
 

@@ -29,6 +29,10 @@
     margin: 15px;
     width: 354px;
   }
+  @media screen and (min-width: $desktop) {
+    margin: 15px;
+    width: 370px;
+  }
 }
 .portfolio {
   @extend %link;
@@ -64,6 +68,7 @@
 }
 
 .portfolio__icon {
+  width: 100%;
   margin-top: 0;
 }
 
