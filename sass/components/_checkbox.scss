@@ -2,6 +2,7 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .form-checkbox__input {
@@ -16,27 +17,30 @@
 }
 
 .form-checkbox__label {
-  display: inline-block;
+  display: inline-flex;
   font-weight: normal;
   font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  margin-left: 35px;
+  align-items: center;
 
-  &::after {
-    @include position-element(absolute, 50%, 20px);
-    transform: translateY(-50%);
+  &::before {
     content: "";
     display: inline-block;
     width: 16px;
     height: 15px;
     border: 2px solid $title-text-color;
     border-radius: 2px;
+    margin-right: 8px;
     transition: all $time $animation-function;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
   }
 }
 
-.form-checkbox__input:checked + .form-checkbox__label::after {
+.form-checkbox__input:checked + .form-checkbox__label::before {
   border-color: $accent-color;
   background-color: $accent-color;
   background-image: url(../images/icon-check3.svg);
@@ -45,10 +49,10 @@
   background-origin: border-box;
 }
 
-.form-checkbox__input:checked:focus + .form-checkbox__label::after {
+.form-checkbox__input:checked:focus + .form-checkbox__label::before {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.form-checkbox__input:focus:not(:checked) + .form-checkbox__label::after {
+.form-checkbox__input:focus:not(:checked) + .form-checkbox__label::before {
   border-color: $accent-color;
 }

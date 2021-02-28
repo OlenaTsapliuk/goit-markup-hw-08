@@ -2,6 +2,8 @@
   max-width: 200px;
   width: 100%;
   height: 50px;
+  justify-content: center;
+  align-items: center;
   border-radius: $border-radius;
   color: $primary-white-color;
   background-color: $accent-color;
@@ -21,8 +23,8 @@
 
 .modal-button {
   @extend %button;
-  // @extend %centered-flex-box;
-  // padding: 10px 55.5px;
+  @extend %centered-flex-box;
+
   transition: box-shadow $time $animation-function;
   &:hover,
   &:focus {
@@ -33,8 +35,7 @@
 .button-mailing {
   @extend %button;
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
+
   // @include centered-flex();
 
   transition: box-shadow $time $animation-function;
@@ -54,8 +55,6 @@
 .buttons {
   @extend %button;
   @extend %centered-flex-box;
-  justify-content: center;
-  align-items: center;
 
   &:hover,
   &:focus {
