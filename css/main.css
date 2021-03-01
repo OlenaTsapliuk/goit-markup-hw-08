@@ -12,7 +12,7 @@
 
 .dropdown-menu-nav,
 .dropdown-menu-contacts,
-.dropdown-menu-links, .site-nav, .features, .posters-set, .team, .client-list, .auth-footer, .auth-nav, .social-list, .button-list, .card-set {
+.dropdown-menu-social-links, .site-nav, .features, .posters-set, .team, .client-list, .auth-footer, .auth-nav, .social-list, .button-list, .card-set {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -20,7 +20,7 @@
 
 .dropdown-menu-nav__link,
 .dropdown-menu-contacts__link,
-.dropdown-menu-links__link, .site-nav__link, .client-list__links, .auth-footer__link, .logo, .logo-secondary, .logo-secondary-footer, .footer-logo, .auth-nav__link, .social-list__links, .portfolio {
+.dropdown-menu-social-links__link, .site-nav__link, .client-list__links, .auth-footer__link, .logo, .logo-secondary, .logo-secondary-footer, .footer-logo, .auth-nav__link, .social-list__links, .portfolio {
   margin-top: 0;
   margin-bottom: 0;
   text-decoration: none;
@@ -121,11 +121,33 @@ body {
   color: #212121;
 }
 
-.dropdown-menu-links.current {
+.dropdown-menu-nav__link {
+  color: #212121;
+}
+
+.dropdown-menu-nav__link.current {
   color: #2094f3;
 }
 
-.dropdown-menu-links {
+.dropdown-menu-contacts__link {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+
+.dropdown-menu-contacts__link.tel {
+  font-size: 34px;
+  line-height: 1.176;
+  color: #2094f3;
+}
+
+.dropdown-menu-contacts__item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.dropdown-menu-social-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -133,19 +155,31 @@ body {
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
+  margin-left: -10px;
+  margin-right: -10px;
   color: #2094f3;
 }
 
-.dropdown-menu-links__item {
+.dropdown-menu-social-links__link {
+  color: #2094f3;
+}
+
+.dropdown-menu-social-links__item {
   padding: 0 10px;
 }
 
-.dropdown-menu-links__item:not(:last-child) {
-  border-right: 1px solid #ececec;
+.dropdown-menu-social-links__item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .dropdown-wraper {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
