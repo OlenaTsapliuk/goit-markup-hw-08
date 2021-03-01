@@ -136,12 +136,16 @@ body {
   color: #2094f3;
 }
 
+.dropdown-menu-links__item {
+  padding: 0 10px;
+}
+
 .dropdown-menu-links__item:not(:last-child) {
-  margin-right: 20px;
+  border-right: 1px solid #ececec;
 }
 
 .dropdown-wraper {
-  display: block;
+  display: inline-block;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
