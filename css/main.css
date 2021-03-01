@@ -160,7 +160,7 @@ body {
   color: #2094f3;
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (min-width: 320px) {
   .dropdown-menu-social-links {
     display: -webkit-box;
     display: -ms-flexbox;
