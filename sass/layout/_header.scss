@@ -36,7 +36,12 @@
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
   z-index: 23;
-  overflow-y: scroll;
+
+  transition: transform 500ms linear;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
 }
 .dropdown-menu.is-open {
   transform: translateX(-50%) translateY(0);

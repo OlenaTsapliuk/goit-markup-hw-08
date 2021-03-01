@@ -99,7 +99,16 @@ body {
   -webkit-transform: translateX(-50%) translateY(-100%);
           transform: translateX(-50%) translateY(-100%);
   z-index: 23;
-  overflow-y: scroll;
+  -webkit-transition: -webkit-transform 500ms linear;
+  transition: -webkit-transform 500ms linear;
+  transition: transform 500ms linear;
+  transition: transform 500ms linear, -webkit-transform 500ms linear;
+}
+
+@media screen and (min-width: 768px) {
+  .dropdown-menu {
+    display: none;
+  }
 }
 
 .dropdown-menu.is-open {
