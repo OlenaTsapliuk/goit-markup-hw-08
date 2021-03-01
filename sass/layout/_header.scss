@@ -91,12 +91,23 @@
 .dropdown-menu-social-links {
   display: flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.171;
   letter-spacing: 0.02em;
   margin-left: -10px;
   margin-right: -10px;
   color: $accent-color;
+
+  @media screen and(max-width:479px) {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-left: -10px;
+    margin-right: -10px;
+    color: $accent-color;
+  }
 }
 .dropdown-menu-social-links__link {
   color: $accent-color;

@@ -152,12 +152,27 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.22;
+  font-size: 14px;
+  line-height: 1.171;
   letter-spacing: 0.02em;
   margin-left: -10px;
   margin-right: -10px;
   color: #2094f3;
+}
+
+@media screen and (max-width: 479px) {
+  .dropdown-menu-social-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-left: -10px;
+    margin-right: -10px;
+    color: #2094f3;
+  }
 }
 
 .dropdown-menu-social-links__link {
