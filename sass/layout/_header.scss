@@ -27,10 +27,9 @@
 }
 .dropdown-menu {
   background-color: $primary-white-color;
-  max-width: 480px;
+  // max-width: 480px;
   height: 100vh;
-
-  width: 100%;
+  width: 100vw;
   padding: 48px 40px;
   position: absolute;
   top: 0;
@@ -66,7 +65,9 @@
   letter-spacing: 0.02em;
   color: $title-text-color;
 }
-
+.dropdown-menu-nav__item:not(:last-child) {
+  margin-bottom: 35px;
+}
 .dropdown-menu-nav__link {
   color: $title-text-color;
   &.current {
