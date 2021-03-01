@@ -100,6 +100,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-100%);
           transform: translateX(-50%) translateY(-100%);
   z-index: 23;
+  overflow-y: scroll;
 }
 
 .dropdown-menu.is-open {
@@ -198,6 +199,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  height: 100%;
 }
 
 @media screen and (max-width: 767px) {

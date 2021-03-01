@@ -29,6 +29,7 @@
   background-color: $primary-white-color;
   max-width: 480px;
   height: 100vh;
+
   width: 100%;
   padding: 48px 40px;
   position: absolute;
@@ -36,6 +37,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-100%);
   z-index: 23;
+  overflow-y: scroll;
 }
 .dropdown-menu.is-open {
   transform: translateX(-50%) translateY(0);
@@ -124,4 +126,5 @@
   flex-direction: column;
   justify-content: space-between;
   // margin: auto;
+  height: 100%;
 }
