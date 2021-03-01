@@ -112,6 +112,40 @@ body {
   height: 40px;
 }
 
+.dropdown-menu-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.dropdown-menu-links.current {
+  color: #2094f3;
+}
+
+.dropdown-menu-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2094f3;
+}
+
+.dropdown-menu-links__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.dropdown-wraper {
+  display: block;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 @media screen and (max-width: 767px) {
   .site-nav,
   .auth-nav {

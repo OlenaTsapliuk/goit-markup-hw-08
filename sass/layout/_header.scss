@@ -56,3 +56,33 @@
   width: 40px;
   height: 40px;
 }
+.dropdown-menu-nav {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.175;
+  letter-spacing: 0.02em;
+  color: $title-text-color;
+}
+
+.dropdown-menu-links.current {
+  color: $accent-color;
+}
+
+.dropdown-menu-links {
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $accent-color;
+}
+.dropdown-menu-links__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+.dropdown-wraper {
+  display: block;
+  justify-content: space-between;
+}
