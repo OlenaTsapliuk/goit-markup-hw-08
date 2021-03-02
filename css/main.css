@@ -806,12 +806,6 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .form-send {
-    margin-left: auto;
-  }
-}
-
 .form-send__field {
   display: block;
   -webkit-box-pack: center;
@@ -1438,6 +1432,9 @@ body {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
