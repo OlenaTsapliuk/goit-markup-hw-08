@@ -26,20 +26,20 @@
   right: 15px;
 }
 .dropdown-menu {
-  background-color: $primary-white-color;
-  max-width: 480px;
-  // overflow-x: hidden;
-  height: 100vh;
-  // width: 100vw;
-  padding: 48px 40px;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(-100%);
-  z-index: 23;
+  @media screen and (max-width: 468px) {
+    background-color: $primary-white-color;
+    // max-width: 480px;
+    height: 100vh;
+    width: 100vw;
+    padding: 48px 40px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+    z-index: 23;
 
-  transition: transform 500ms linear;
-
+    transition: transform 500ms linear;
+  }
   @media screen and (min-width: $tablet) {
     display: none;
   }
