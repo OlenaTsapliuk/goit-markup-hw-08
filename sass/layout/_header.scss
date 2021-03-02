@@ -26,6 +26,7 @@
   right: 15px;
 }
 .dropdown-menu {
+  position: fixed;
   background-color: $primary-white-color;
   // max-width: 480px;
   height: 100vh;
@@ -65,10 +66,17 @@
 }
 .dropdown-menu-nav {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
   letter-spacing: 0.02em;
   color: $title-text-color;
+
+  @media screen and(min-width:320px) {
+    font-size: 32px;
+    line-height: 1.166;
+  }
+  @media screen and(min-width:480px) {
+    font-size: 40px;
+    line-height: 1.175;
+  }
 }
 .dropdown-menu-nav__item:not(:last-child) {
   margin-bottom: 35px;
@@ -82,15 +90,29 @@
 
 .dropdown-menu-contacts__link {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.166;
   letter-spacing: 0.02em;
   color: $primary-text-color;
 
+  @media screen and(min-width:320px) {
+    font-size: 18px;
+    line-height: 1.222;
+  }
+  @media screen and(min-width:480px) {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+
   &.tel {
-    font-size: 34px;
-    line-height: 1.176;
     color: $accent-color;
+
+    @media screen and(min-width:320px) {
+      font-size: 24px;
+      line-height: 1.166;
+    }
+    @media screen and(min-width:480px) {
+      font-size: 34px;
+      line-height: 1.176;
+    }
   }
 }
 .dropdown-menu-contacts__item:not(:last-child) {
@@ -99,22 +121,18 @@
 .dropdown-menu-social-links {
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.171;
-  letter-spacing: 0.02em;
   margin-left: -10px;
   margin-right: -10px;
   color: $accent-color;
+  letter-spacing: 0.02em;
 
   @media screen and(min-width:320px) {
-    display: flex;
-    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.333;
+  }
+  @media screen and(min-width:480px) {
     font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    margin-left: -10px;
-    margin-right: -10px;
-    color: $accent-color;
+    line-height: 1.222;
   }
 }
 .dropdown-menu-social-links__link {

@@ -89,8 +89,8 @@ body {
 }
 
 .dropdown-menu {
+  position: fixed;
   background-color: #ffffff;
-  max-width: 480px;
   height: 100vh;
   width: 100vw;
   padding: 48px 40px;
@@ -125,10 +125,22 @@ body {
 
 .dropdown-menu-nav {
   font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
   letter-spacing: 0.02em;
   color: #212121;
+}
+
+@media screen and (min-width: 320px) {
+  .dropdown-menu-nav {
+    font-size: 32px;
+    line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .dropdown-menu-nav {
+    font-size: 40px;
+    line-height: 1.175;
+  }
 }
 
 .dropdown-menu-nav__item:not(:last-child) {
@@ -145,16 +157,40 @@ body {
 
 .dropdown-menu-contacts__link {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 1.166;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
+@media screen and (min-width: 320px) {
+  .dropdown-menu-contacts__link {
+    font-size: 18px;
+    line-height: 1.222;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .dropdown-menu-contacts__link {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
 .dropdown-menu-contacts__link.tel {
-  font-size: 34px;
-  line-height: 1.176;
   color: #2094f3;
+}
+
+@media screen and (min-width: 320px) {
+  .dropdown-menu-contacts__link.tel {
+    font-size: 24px;
+    line-height: 1.166;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .dropdown-menu-contacts__link.tel {
+    font-size: 34px;
+    line-height: 1.176;
+  }
 }
 
 .dropdown-menu-contacts__item:not(:last-child) {
@@ -166,26 +202,23 @@ body {
   display: -ms-flexbox;
   display: flex;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.171;
-  letter-spacing: 0.02em;
   margin-left: -10px;
   margin-right: -10px;
   color: #2094f3;
+  letter-spacing: 0.02em;
 }
 
 @media screen and (min-width: 320px) {
   .dropdown-menu-social-links {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.333;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .dropdown-menu-social-links {
     font-size: 18px;
-    line-height: 1.22;
-    letter-spacing: 0.02em;
-    margin-left: -10px;
-    margin-right: -10px;
-    color: #2094f3;
+    line-height: 1.222;
   }
 }
 
