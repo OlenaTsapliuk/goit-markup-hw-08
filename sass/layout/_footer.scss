@@ -43,7 +43,7 @@
 .footer-wraper {
   @media screen and(min-width: $tablet) {
     display: flex;
-    // justify-content: space-between;
+    justify-content: space-between;
     align-items: baseline;
   }
 }
