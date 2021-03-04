@@ -89,7 +89,6 @@ body {
 }
 
 .dropdown-menu {
-  position: fixed;
   background-color: #ffffff;
   height: 100vh;
   width: 100vw;
@@ -100,6 +99,7 @@ body {
   -webkit-transform: translateX(-50%) translateY(-200%);
           transform: translateX(-50%) translateY(-200%);
   z-index: 23;
+  overflow-y: scroll;
   -webkit-transition: -webkit-transform 500ms linear;
   transition: -webkit-transform 500ms linear;
   transition: transform 500ms linear;
@@ -210,7 +210,7 @@ body {
 
 @media screen and (min-width: 320px) {
   .dropdown-menu-social-links {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.333;
   }
 }
@@ -246,6 +246,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  position: fixed;
 }
 
 @media screen and (max-width: 767px) {

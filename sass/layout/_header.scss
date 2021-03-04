@@ -26,7 +26,6 @@
   right: 15px;
 }
 .dropdown-menu {
-  position: fixed;
   background-color: $primary-white-color;
   // max-width: 480px;
   height: 100vh;
@@ -37,7 +36,7 @@
   left: 50%;
   transform: translateX(-50%) translateY(-200%);
   z-index: 23;
-
+  overflow-y: scroll;
   transition: transform 500ms linear;
 
   @media screen and (min-width: $tablet) {
@@ -127,7 +126,7 @@
   letter-spacing: 0.02em;
 
   @media screen and(min-width:320px) {
-    font-size: 14px;
+    font-size: 10px;
     line-height: 1.333;
   }
   @media screen and(min-width:480px) {
@@ -151,4 +150,5 @@
   justify-content: space-between;
   // margin: auto;
   height: 100%;
+  position: fixed;
 }
