@@ -93,13 +93,12 @@ body {
   height: 100vh;
   width: 100vw;
   padding: 48px 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-200%);
           transform: translateX(-50%) translateY(-200%);
   z-index: 23;
-  overflow-y: scroll;
   -webkit-transition: -webkit-transform 500ms linear;
   transition: -webkit-transform 500ms linear;
   transition: transform 500ms linear;
@@ -246,7 +245,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
-  position: fixed;
+  overflow-y: scroll;
 }
 
 @media screen and (max-width: 767px) {
@@ -1155,7 +1154,6 @@ body {
   font-size: 24px;
   line-height: 1.174;
   letter-spacing: 0.03em;
-  padding: 16px 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1168,6 +1166,7 @@ body {
 .logo {
   color: #2094f3;
   display: inline-block;
+  padding: 16px 0;
 }
 
 .logo-secondary {

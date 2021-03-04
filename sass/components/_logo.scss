@@ -5,7 +5,6 @@
   font-size: 24px;
   line-height: 1.174;
   letter-spacing: 0.03em;
-  padding: 16px 0;
 
   @media screen and (min-width: $desktop) {
     font-size: 26px;
@@ -17,6 +16,7 @@
   @extend %whole-logo;
   color: $accent-color;
   display: inline-block;
+  padding: 16px 0;
 }
 
 .logo-secondary {

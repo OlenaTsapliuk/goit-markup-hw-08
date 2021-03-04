@@ -31,12 +31,12 @@
   height: 100vh;
   width: 100vw;
   padding: 48px 40px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translateX(-50%) translateY(-200%);
   z-index: 23;
-  overflow-y: scroll;
+
   transition: transform 500ms linear;
 
   @media screen and (min-width: $tablet) {
@@ -150,5 +150,5 @@
   justify-content: space-between;
   // margin: auto;
   height: 100%;
-  position: fixed;
+  overflow-y: scroll;
 }
